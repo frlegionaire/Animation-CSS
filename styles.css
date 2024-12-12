@@ -1,0 +1,22 @@
+.recfond {
+    background-color: black;
+    height:100px;
+    width: 100%;
+}
+
+.testanim {
+    background-color: purple;
+    height: 100px;
+    width: 100px;
+    animation: 2s linear 1s infinite degrade;
+}
+
+@keyframes degrade {
+    from {
+        margin-left: -20%;
+    
+    }
+    to {
+        margin-left: 100%;
+    }
+}
