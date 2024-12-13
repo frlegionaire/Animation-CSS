@@ -1,22 +1,63 @@
-.recfond {
-    background-color: black;
-    height:100px;
-    width: 100%;
-}
+body {
+    display: flex;
+  }
 
-.testanim {
-    background-color: purple;
-    height: 100px;
-    width: 100px;
-    animation: 2s linear 1s infinite degrade;
-}
-
-@keyframes degrade {
+  .abra {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .animbateau {
+    animation: 3s linear 1s bateau;
+  }
+  
+  @keyframes bateau {
     from {
-        margin-left: -20%;
-    
+      margin-left: 0%;
     }
     to {
-        margin-left: 100%;
+      margin-left: 1135%;
     }
-}
+  }
+
+  .imagebateau {
+    content: url(img/pngtree-cartoon-small-wooden-boat-png-download-image_1178373.jpg);
+    height: 250px;
+    width: 250px;
+    margin-top: 425px;
+    animation: opacity 1s;
+    animation-delay: 3.5s;
+  }
+
+  @keyframes opacity {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  .imagerequin {
+    animation: mange 1.2s;
+    animation-delay: 3s;
+    content: url('img/pngtree-shark-with-open-mouth-photo-image_15554987.png');
+    height: 350px;
+    position: relative;
+    left: 1150px;
+    top: 320px;
+  }
+  
+
+  @keyframes mange {
+    0% {
+      content: url(img/pngtree-shark-with-open-mouth-photo-image_15554987.png);
+    }
+    100% {
+      content: url(img/requin2.png);
+    }
+  }
+  
+
+  
+  
